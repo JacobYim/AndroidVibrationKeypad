@@ -19,13 +19,13 @@
 
     <Button
         android:id="@+id/btn_show_keyboard"
-        android:text="키보드 보이기"
+        android:text="Vibration Off"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/btn_hide_keyboard"
-        android:text="키보드 숨기기"
+        android:text="Vibration On"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
