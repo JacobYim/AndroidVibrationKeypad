@@ -7,26 +7,73 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editText"
+    <TextView
+        android:id="@+id/instruction_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:textSize="24dp"
+        android:text="1. Wear wrist sensor"/>
+
+    <TextView
+        android:id="@+id/nameText"
+        android:text="2. Type your name :"
+        android:textSize="24dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/instructionText1"
+        android:text="3. After tab the below blank, touch number 1-0  10 times"
+        android:textSize="24dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instructionText2"
+        android:text="4. After turn on the vibration, touch number 1-0  10 times at the above blank"
+        android:textSize="24dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
     <Button
-        android:id="@+id/btn_show_keyboard"
+        android:id="@+id/btn_vibration_on"
+        android:text="Vibration On"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_vibration_off"
         android:text="Vibration Off"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/btn_hide_keyboard"
-        android:text="Vibration On"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        android:text="Save"/>
 </LinearLayout>
